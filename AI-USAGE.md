@@ -12,18 +12,17 @@ produced or edited code you submit — **before** you commit it. Using AI only t
 
 ## Log (one entry per AI use — copy the block for each)
 
-### #1 — <short title>
-- **Date:** YYYY-MM-DD
-- **Tool / model:** <free-tier assistant — free models only>
-- **Files:** `src/...`
+### #1 — Controlled Input
+- **Date:** 2026-11-15
+- **Tool / model:** ChatGPT 5.6 Luna
+- **Files:** `src/AddTodoForm`
 - **Prompt (verbatim):**
 
   ```
-  <paste the exact prompt you gave the AI>
+  I currently have onChange={(e) => setText(e.target.value)} for controlled input. How does it differ from onChange={() => setText(text)}
   ```
 
-- **What it produced & what I kept / changed / rejected:** <1–3 sentences — and why the
-  result is correct>
+- **What it produced & what I kept / changed / rejected:** The AI explained that setText(text) uses an existing state value instead of using a new value entered by the user. I change my code so that the input updates React state whenever the users type. The model told me that I needed a variable to track the event and get the current text in the input that is stored by the variable, hence (e) => setText(e.target.value)
 
 ---
 
